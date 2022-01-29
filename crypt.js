@@ -1,10 +1,6 @@
 
 //CRIPTOGRAFIA - coleta e faz a criptografia
 function encode(){
-    const form = document.querySelector('#myForm");
-    form.addEventListener('submit', function(event) {
-    event.preventDefault();
-});
     var strg = document.getElementById('input').value;
     var cryp = strg.replace(/e/g,'enter').replace(/i/g,'imes').replace(/a/g,'ai').replace(/o/g,'ober').replace(/u/g,'ufat');
     document.getElementById('output').value = cryp;
