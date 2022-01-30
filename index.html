@@ -12,17 +12,17 @@
 
   <main class="main">
     <section class="form box">
-      <!--<form id="myForm">-->
+      <form id="myForm">
         <label for="input-texto">Apenas letras minúsculas, sem acento</label>
         <input class="text-input" type="text" name="input-texto" id="input" pattern="[a-z ]{1,5000}" placeholder="insira o texto aqui">
-        <input onclick="encode()"class="btn" type="submit" value="criptografar!" id="btn-cripto">
-        <input onclick="decode()"class="btn" type="submit" value="descriptografar!" id="btn-descripto">
-      <!--</form>-->
+        <button onclick="encode()"class="btn" type="submit" id="btn-cripto">criptografar!</button>
+        <button onclick="decode()"class="btn" type="submit" id="btn-descripto">descriptografar!</button>
+      </form>
     </section>
   
     <section class="msg box">
       <h2 id="">Mensagem criptografada:</h2>
-      <input class="text-input" type="text" name="input-texto" placeholder="resultado" id="output">
+      <input class="text-input" type="text" name="input-texto" pattern="[a-z ]{1,5000}" placeholder="resultado" id="output">
       <input onclick="copy()" class="btn" type="submit" value="copiar" id="btn-copy">
     </section>
   </main>
